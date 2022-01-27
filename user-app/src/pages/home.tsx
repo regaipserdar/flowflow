@@ -15,7 +15,7 @@ const HomePage: React.FunctionComponent<IPageProps> = props => {
                         Change your password <Link to="/change">here</Link>.
                     </p>
                     <p>
-                        Click <Link to='/logout'>here</Link> to logout.
+                        Click here <Link to='/logout'>here</Link> to logout.
                     </p>
                 </CardBody>
             </Card>
