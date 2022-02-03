@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardBody, Container } from 'reactstrap';
 import IPageProps from '../interfaces/page';
 
+
 const HomePage: React.FunctionComponent<IPageProps> = props => {
     return (
         <Container>
@@ -23,4 +24,33 @@ const HomePage: React.FunctionComponent<IPageProps> = props => {
     );
 }
 
+
+
+
+
+export const Overview: React.FunctionComponent<IPageProps> = () => {
+    return <div className="overview">Overview</div>;
+};
+
+export const Users: React.FunctionComponent<IPageProps> = () => {
+    return <div className="overview">Users</div>;
+};
+
+export const Revenue: React.FunctionComponent<IPageProps> = () => {
+    return <div className="overview">Revenue</div>;
+};
+
+export const Order: React.FunctionComponent<IPageProps> = () => {
+    return <div className="overview">Order</div>;
+};
+
+export const History: React.FunctionComponent<IPageProps> = () => {
+    return <div className="overview">History</div>;
+};
+
+export const Configurations: React.FunctionComponent<IPageProps> = () => {
+    return <div className="overview">Configurations</div>;
+};
+
 export default HomePage;
+

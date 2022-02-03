@@ -6,6 +6,10 @@ import { auth } from './config/firebase';
 import logging from './config/logging';
 import routes from './config/routes';
 
+
+
+
+
 export interface IApplicationProps { }
 
 const Application: React.FunctionComponent<IApplicationProps> = props => {
@@ -39,8 +43,7 @@ const Application: React.FunctionComponent<IApplicationProps> = props => {
                         exact={route.exact} 
                         render={(routeProps: RouteComponentProps<any>) => {
                             if (route.protected)
-                                return <AuthRoute><route.component  {...routeProps} /></AuthRoute>;
-
+                                return <AuthRoute><route.component  {...routeProps} /></AuthRoute>
                             return <route.component  {...routeProps} />;
                         }}
                     />)}
@@ -48,5 +51,6 @@ const Application: React.FunctionComponent<IApplicationProps> = props => {
         </div>
     );
 }
+
 
 export default Application;
